@@ -1,0 +1,243 @@
+/* css reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+section {
+    padding: 40px;
+    position: relative;
+}
+
+.image-icon {
+    padding-bottom: 20px;
+}
+
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+}
+
+p {
+    padding-bottom: 60px;
+}
+
+.button-wrapper {
+    margin-top: 60px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: solid;
+    border-color:hsl(0, 0%, 95%);
+    padding: 10px 25px 10px 25px;
+    border-radius: 22px;
+    max-width: 150px;
+    position: absolute;
+    bottom: 40px;
+}
+
+button:hover {
+    border: solid;
+    border-color: hsl(0, 0%, 95%);
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    color: hsl(184, 100%, 22%);
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(184, 100%, 22%);
+}
+
+.attribution a:hover {
+    color: hsl(31, 77%, 52%);
+}
+
+@media (max-width: 650px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 90%;
+        place-content: center;
+        justify-items: center;
+        row-gap: 0px;
+        column-gap: 0px;
+        /*height: 100%;*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sedan {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        place-content: center;
+        justify-items: center;
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+
+    .sedan {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1249px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        height: 100vh;
+        max-width: 65%;
+        place-content: center;
+        justify-items: center;
+        margin: auto;
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+
+    .sedan {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        max-width: 55%;
+        place-content: center;
+        justify-items: center;
+        margin: auto;
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+
+    .sedan {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .luxury {
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+    
+
+    
